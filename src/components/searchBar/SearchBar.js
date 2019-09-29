@@ -29,7 +29,6 @@ const searchBar = ({
     loadMovie(inputVal);
     setInput("");
     setSuggestions();
-    console.log(inputVal);
   };
 
   const handleEnter = event => {

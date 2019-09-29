@@ -25,7 +25,6 @@ export const setSuggestions = gatheredSuggestions => {
 };
 
 export const setMovie = movieData => {
-  console.log("movie data", movieData);
   return {
     type: "SET_MOVIE",
     movie: movieData

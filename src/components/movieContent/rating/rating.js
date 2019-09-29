@@ -1,5 +1,6 @@
 import React from "react";
 import { FaRegStar, FaStar } from "react-icons/fa";
+import "./rating.scss";
 
 const rating = ({ number }) => {
   const maxNumberOfStars = 10;
@@ -15,7 +16,7 @@ const rating = ({ number }) => {
       : null;
 
   return (
-    <div>
+    <div className="rating">
       {renderedStars}
       {emptyStars}
     </div>

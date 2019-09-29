@@ -1,23 +1,41 @@
+$mobileRes: 650px;
+
 .movie {
   background: white;
   color: black;
   width: 80%;
   margin: 0 auto;
+  margin-top: 50px;
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.4);
   display: flex;
   flex-wrap: wrap;
-
-  &__title {
-  }
+  border-radius: 4px;
 
   &__image {
     width: calc(25% - 2px);
     margin: 5%;
-    border: 1px solid rgba(255, 0, 0, 0.4);
     border-radius: 4px;
+  }
+
+  @media screen and (max-width: $mobileRes) {
+    .movie {
+      width: 90%;
+      justify-content: center;
+      &__image {
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 80%;
+      }
+    }
   }
 }
 
 .movie-description {
-  width: 65%;
+  width: calc(55%);
+  padding: 5%;
+  text-align: left;
+  @media screen and (max-width: $mobileRes) {
+    width: 80%;
+    margin: 5px 0 25px 5%;
+  }
 }
