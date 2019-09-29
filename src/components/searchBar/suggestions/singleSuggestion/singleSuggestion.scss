@@ -1,0 +1,26 @@
+$hover-background: rgb(239, 239, 239);
+
+.suggestion {
+  width: calc(100% - 12px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: white;
+  color: black;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.8);
+
+  &__image {
+    width: 50px;
+    height: 80px;
+  }
+
+  &__title {
+    font-weight: bold;
+    margin-left: 25px;
+  }
+}
+
+.suggestion:hover {
+  background: $hover-background;
+}

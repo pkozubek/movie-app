@@ -1,0 +1,31 @@
+$search-bar-color: white;
+
+.search {
+  border-bottom: 1px solid $search-bar-color;
+  width: 80%;
+  margin: 25px auto;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  &__input {
+    background: transparent;
+    border: none;
+    color: $search-bar-color;
+    width: 80%;
+    height: 100%;
+    margin: 0 0 5px 10px;
+  }
+
+  &__input::placeholder {
+    color: $search-bar-color;
+  }
+
+  &__button {
+    border: none;
+    background: transparent;
+    color: $search-bar-color;
+    font-size: 1.4em;
+  }
+}

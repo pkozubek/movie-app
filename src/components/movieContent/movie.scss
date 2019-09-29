@@ -1,0 +1,23 @@
+.movie {
+  background: white;
+  color: black;
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-wrap: wrap;
+
+  &__title {
+  }
+
+  &__image {
+    width: calc(25% - 2px);
+    margin: 5%;
+    border: 1px solid rgba(255, 0, 0, 0.4);
+    border-radius: 4px;
+  }
+}
+
+.movie-description {
+  width: 65%;
+}
