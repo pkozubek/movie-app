@@ -1,7 +1,7 @@
 const http = require("http");
 const data = require("./fake_data");
 
-const PORT = "6001";
+const PORT = process.env.PORT;
 
 function requestHandler(req, res) {
   let status;
@@ -11,7 +11,6 @@ function requestHandler(req, res) {
   urlValues.shift();
 
   let gatheredData = {};
-  console.log("req", urlValues);
 
   if (urlValues[0] == "movie") {
     switch (urlValues[1]) {

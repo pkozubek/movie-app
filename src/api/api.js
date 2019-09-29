@@ -1,7 +1,8 @@
 import axios from "axios";
 
-const SUGGESTION_URL = "http://localhost:6001/movie/suggestion/";
-const MOVIE_URL = "http://localhost:6001/movie/name/";
+const SUGGESTION_URL =
+  "https://movie-server-pk.herokuapp.com/movie/suggestion/";
+const MOVIE_URL = "https://movie-server-pk.herokuapp.com/movie/name/";
 
 export async function gatherData(purpose, val) {
   const localUrl = purpose === "movie" ? MOVIE_URL + val : SUGGESTION_URL + val;
